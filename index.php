@@ -1,3 +1,6 @@
 <?php
+require __DIR__.'./vendor/autoload.php';
+use App\Controller\GitController;
 
-    echo"GIT";
+$git = new GitController();
+echo $git->iniciar();
